@@ -1,0 +1,21 @@
+.ktsys-share-class-container{
+    width: 100%;
+    float: left;
+    max-width: 250px;
+
+    @include breakpoint(small){
+        max-width: 300px;
+    }
+    
+    .ktsys-share-class-container__label{
+        margin-top: 5px;
+        font-family: 'Klavika Regular', sans-serif;
+        text-transform: uppercase;
+        float: left;
+        width: 35%;
+        
+        @include breakpoint(large){
+            text-align: right;
+        }
+    }
+}

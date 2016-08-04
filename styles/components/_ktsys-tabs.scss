@@ -1,0 +1,72 @@
+.ktsys-tabs{
+	padding: 0;
+	float: left;
+	margin-bottom: 0;
+    display: none;
+    
+    @include breakpoint(medium) {
+        display: block;
+    }
+    
+    &.ktsys-tabs--header{
+        position: fixed;
+        width: 100%;
+        top: 140px;
+        z-index: 4;
+        background: $bg-colour;
+
+        @include breakpoint(medium-large) {
+            top: 110px;
+        }
+    }
+
+	li{
+		display: block;
+		float: left;
+		color: white;
+		padding: 10px 15px;
+		cursor: pointer;
+		text-transform: uppercase;
+        transition: 0.3s;
+        background: $ab-turquoise;
+		font-size: responsive 15px 18px;
+		font-family: 'Klavika Light', sans-serif;
+
+		&.active, &:hover{
+			color: white;
+		}
+
+		&.active{
+			font-family: 'Klavika Regular', sans-serif;
+			background: darken($ab-turquoise, 10%);
+		}
+
+		&:not(.active):hover{
+			background: lighten($ab-turquoise, 10%);
+		}
+        
+        &:not(:last-child){
+            border-right: 1px solid white;
+        }
+	}
+}
+
+.ktsys-tabs--details{
+    margin-top: 0;
+    
+    li{
+        font-size: responsive 13px 16px;
+        
+        &.active{
+            background: darken($ab-turquoise, 10%); 
+        }   
+        
+        &:not(.active):hover{
+            background: lighten($ab-turquoise, 10%);
+        }
+        
+        &:not(:last-child){
+            border-right: 1px solid white;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.ktsys-change{
+    display: inline-block;
+    margin-bottom: 3px;
+    @include size(0);
+}
+
+.ktsys-change--up{
+    @include triangle('up', 7px, $change-up);
+}
+
+.ktsys-change--down{
+    @include triangle('down', 7px, $change-down);
+}

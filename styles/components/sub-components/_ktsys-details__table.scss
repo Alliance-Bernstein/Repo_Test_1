@@ -1,0 +1,147 @@
+.ktsys-details__table{
+    width: 100%;
+    overflow: auto;
+    display: block;
+    border-collapse: collapse;
+    font-size: responsive 12px 14px;
+    
+    @include breakpoint(large) {
+        display: table;
+        margin-top: 18px;
+    }
+    
+    td, th{
+        width: 12.5%;
+    }
+    
+    td.ktsys-details__table__td--value,
+    th.ktsys-details__table__td--value{
+        text-align: right;
+        padding-right: 5px;
+        box-sizing: border-box;
+    }
+
+    thead,
+    tbody{
+        width: 100%;
+    }
+
+    tbody{
+        display: table-row-group;
+    }
+    
+    thead{
+        text-transform: uppercase;
+        display: table-header-group;
+        
+        th .ktsys-as-of{
+            font-size: responsive 7px 9px;
+            margin-top: -3px;
+            display: block;
+        }
+        
+        tr{
+            color: black;
+            font-family: 'Klavika Bold', sans-serif;    
+        }
+    }
+    
+    th{
+       text-align: left;
+       padding: 10px 0 10px 10px;
+       border-top: 1px solid $main-text;
+       border-bottom: 1px solid $main-text;
+       background: $table-heading;
+    }
+    
+    tbody{
+        td{
+            font-family: 'Klavika Regular', sans-serif;
+            color: black;
+            padding: 10px 0 10px 10px;
+            border-bottom: 1px solid $main-text;
+        }
+    }
+    
+    .ktsys-details__table--capitalize{
+        text-transform: capitalize;
+    }
+}
+
+.ktsys-details__table--morningstar{
+    text-transform: capitalize;
+    margin-top: 10px;
+    
+    span{
+        clear: both;
+        display: block;
+    }
+    
+    tbody{
+        td:first-child{
+            font-family: 'Klavika Bold', sans-serif;
+        }
+    }
+}
+
+.ktsys-details__table--holdings{
+
+    th:last-child,
+    td:last-child{
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    tbody{
+        text-transform: capitalize;
+    }
+}
+
+.ktsys-details__table--fees{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    thead{
+        
+        td{
+            box-sizing: border-box;
+            padding: 15px 0 15px 10px;
+        }    
+    }
+    
+    td{
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+}
+
+.ktsys-details__table--complete-holdings{
+    text-transform: capitalize;
+    
+    th, td{
+        text-align: center;
+    }
+    
+    th:first-child, td:first-child{
+        text-align: left;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+}
+
+.ktsys-details__table--distributions{
+    tbody td:first-child{
+        font-family: 'Klavika Bold', sans-serif;
+    }
+}
+
+.ktsys-details__table--past-dividends{
+    th, td{
+        width: 25%;
+    }
+}
+
+#past-dividend-payments thead,
+#past-dividend-payments tbody {
+    display: table;
+}

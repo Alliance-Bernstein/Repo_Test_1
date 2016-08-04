@@ -1,0 +1,55 @@
+.ktsys-true-details{
+    clear: fix-legacy;
+    width: 100%;
+    max-width: 975px;
+    margin: 10px auto 0 auto;
+    
+    @include breakpoint(medium){
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .ktsys-true-details__detail{
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 5px;
+        width: calc(49% - 5px);
+        
+        @include breakpoint(small){
+            width: calc(49.5% - 5px);
+        }
+        
+        @include breakpoint(medium){
+            margin-top: 10px;
+            width: auto;
+            order: 1;
+            flex-grow: 1;
+            margin-left: 0;
+        }
+        
+        .ktsys-true-details__detail__heading{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: responsive 10px 12px;
+            color: darken($main-text, 5%);
+            font-family: 'Klavika Regular', sans-serif;
+            
+            .ktsys-as-of{
+                font-size: responsive 10px 12px;
+            }
+        }
+        
+        .ktsys-true-details__detail__data{
+            text-align: center;
+            font-family: 'Klavika Regular', sans-serif;
+            font-size: responsive 18px 20px;
+            color: darken($main-text, 30%);
+        }
+    }
+    
+    .ktsys-true-details__detail:not(:first-child){
+        @include breakpoint(medium){
+            margin-left: 5px;
+        }
+    }
+}

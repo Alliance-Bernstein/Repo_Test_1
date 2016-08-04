@@ -1,0 +1,16 @@
+.ktsys-details__button{
+    background: darken($filter-heading-colour, 10%);
+    color: white;
+    font-family: 'Klavika Regular', sans-serif;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: responsive 11px 13px;
+
+    &:hover{
+        background: darken($filter-heading-colour, 30%);
+    }
+}

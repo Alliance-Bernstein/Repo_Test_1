@@ -1,0 +1,83 @@
+.ktsys-pagination-container{
+    position: relative;
+    clear: fix-legacy;
+}
+
+.ktsys-pagination-list{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 750px;
+    margin: 20px auto;
+    clear: fix-legacy;
+}
+
+.ktsys-pagination__button{
+    background: $ab-turquoise;
+    padding: 7px;
+    box-sizing: border-box;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    font-size: responsive 13px 16px;
+    font-family: 'Klavika Regular', sans-serif;
+    @include size(35px);
+
+    &:hover{
+        background: darken($ab-turquoise, 10%);
+    }
+}
+
+.ktsys-pagination__first{
+    float: left;
+}
+
+.ktsys-pagination__last{
+    float: right;
+}
+
+.ktsys-pagination{
+    clear: fix-legacy;
+    display: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+    width: auto;
+    
+    @include breakpoint(medium-large){
+        display: block;
+    }
+    
+    li{
+      display: inline-block;
+      list-style: none;
+      box-sizing: border-box;
+      padding: 7px;
+      transition: 0.3s;
+      text-align: center;
+      background: $ab-turquoise;
+      color: white;
+      font-family: 'Klavika Regular', sans-serif;  
+      @include size(35px);
+      
+      &:hover{
+          background: darken($ab-turquoise, 10%);
+      }
+      
+      &.active{
+          background: darken($ab-turquoise, 15%);
+      }
+      
+      &:not(.active){
+          cursor: pointer;
+      }
+      
+    }
+    
+    li:not(:first-child){
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,56 @@
+.ktsys-filter__ul__info{
+     display: block;
+     float: left;
+     text-align: left;
+     padding: 8.5px 0 9px 7px;
+     box-sizing: border-box;
+     background: $ab-turquoise;
+     float: left;
+     width: 70%;
+     transition: 0.3s;
+     position: relative;
+     font-size: responsive 9px 14px;
+            
+     @include breakpoint(medium){
+         padding: 7.5px 0;
+         text-align: center;      
+     } 
+           
+     &:hover{
+          background: darken($ab-turquoise, 10%);
+     }
+}
+		        
+.ktsys-filter__ul__help{
+    padding: 7.5px 0;
+    float: right;
+    width: 30%;
+    transition: 0.3s;
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    background: darken($ab-turquoise, 10%);
+            
+    @include breakpoint(medium){
+        padding-top: 7.5px;
+    }
+            
+    &:hover{
+        background: darken($ab-turquoise, 30%);
+    }
+}
+
+.ktsys-filter__ul,
+.ktsys-share-class-container ul{
+	clear: fix-legacy;
+	margin: 0;
+	padding: 0;
+}
+
+.ktsys-filter__ul li.ktsys-filter__button{
+    padding: 12px 0;
+    
+    @include breakpoint(medium){
+        padding: 8px 0;
+    }
+}

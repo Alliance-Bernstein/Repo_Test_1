@@ -1,0 +1,117 @@
+.ktsys-downloads{
+    font-family: 'Klavika Regular', sans-serif;
+    padding: 0;
+    
+    li{
+        list-style: none;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+        display: inline-block;
+        
+        @include breakpoint(medium) {
+            float: left;
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+        @include breakpoint(large) {
+            text-align: right;
+            margin-bottom: 0;
+        }
+        
+        &:not(:first-child){
+            @include breakpoint(medium) {
+                margin-left: 20px;
+            }
+        }
+    }
+    
+    .ktsys-downloads__button{
+        clear: fix-legacy;
+        text-decoration: none;
+        font-size: responsive 11px 13px;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Klavika Regular', sans-serif;
+        text-transform: capitalize;
+        
+        @include breakpoint(medium) {
+            display: inline-block;
+        }
+        
+        &:hover .ktsys-downloads--xls{
+            background-position: -34px -34px;
+        }
+    }
+}
+
+
+.ktsys-downloads--holdings{
+    clear: fix-legacy;
+    margin-bottom: 34px;
+
+    @include breakpoint(medium) {
+        float: right;
+        margin-top: 10px;
+    }
+
+    .ktsys-downloads {
+        text-align: right;
+
+        li {
+            float: none;
+            display: inline-block;
+        }
+    }
+
+    .ktsys-disclaimer{
+        @include breakpoint(medium) {
+            text-align: right;
+        }
+    }
+
+    .ktsys-downloads--xls {
+        margin-bottom: -12px;
+    }
+}
+
+.ktsys-downloads--pdf{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 8px;
+    background: url('../images/download.png') 0 0;
+    @include size(33px);
+    
+    &:hover{
+        background-position: 0 -34px;
+    }
+    
+    &.ktsys-downloads--funds{
+        background-size: 400% 400%;
+        margin: 3px 0;
+        float: left;
+        @include size(15px);
+    }
+    
+    &.ktsys-downloads--funds.ktsys-downloads--emea{
+        @include size(20px);
+    }
+}
+
+.ktsys-downloads--xls{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    background: url('../images/download.png') -34px 0;
+    @include size(33px);
+    
+    &:hover{
+        background-position: -34px -34px;
+    }
+}
+
+#related-materials .ktsys-downloads--xls {
+    float: left;
+}

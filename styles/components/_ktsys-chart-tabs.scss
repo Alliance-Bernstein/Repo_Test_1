@@ -1,0 +1,70 @@
+.ktsys-chart-tabs{
+    margin-bottom: 30px;
+    
+    &.ktsys-chart-tabs--hk{
+        ul{
+            @include breakpoint(small-medium){
+                display: flex;
+                flex-direction: row;
+            }    
+        }
+        
+        li{
+           @include breakpoint(medium){
+                float: none;
+                flex-grow: 1;
+                order: 1;
+                width: 0 !important;
+            }
+        }
+    }
+    
+    ul{
+        padding: 0;
+        margin: 0;
+        clear: fix-legacy;
+        
+        @include breakpoint(medium){
+            display: flex;
+            flex-direction: row;
+        }
+        
+        li{
+            cursor: pointer;
+            list-style: none;
+            float: left;
+            margin-bottom: 1px;
+            width: 100%;
+            font-family: 'Klavika Regular', sans-serif;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px 0;
+            transition: 0.3s;
+            background: $ab-turquoise;
+            
+            @include breakpoint(small-medium){
+                width: 49.84%;
+            }
+            
+            @include breakpoint(medium){
+                float: none;
+                flex-grow: 1;
+                order: 1;
+                width: 0 !important;
+            }
+            
+            &:hover{
+               background: lighten($ab-turquoise, 10%); 
+            }
+            
+            &.active{
+                background: darken($ab-turquoise, 10%);
+            }
+            
+            &:not(:last-child){
+                border-right: 1px solid white;
+            }
+        }
+    }
+}

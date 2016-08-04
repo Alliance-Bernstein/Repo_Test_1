@@ -1,0 +1,45 @@
+/*-------- COMPONENTS -------*/
+
+@import "sub-components/ktsys-pdf__details";
+@import "sub-components/ktsys-pdf__content";
+@import "sub-components/ktsys-pdf__chart-container";
+@import "sub-components/ktsys-details__table";
+
+/*--------------------------*/
+
+.ktsys-pdf__title-container{
+    clear: fix-legacy;
+    margin: 0;
+}
+
+.ktsys-pdf__title{
+     text-transform: capitalize;
+     float: left;
+     font-size: 26px;
+     font-family: 'Klavika Bold', sans-serif;
+     color: black;
+     margin: 20px 0 -10px 0;
+}
+
+.ktsys-pdf__subtitle{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Klavika Bold', sans-serif;
+    border-bottom: 1px solid $main-text;
+    padding-bottom: 35px;
+    margin-bottom: 34px;
+    margin-top: -5px;
+    color: $ab-turquoise;
+}
+
+.ktsys-pdf__month-title{
+    float: right;
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: 'Klavika Regular', sans-serif;
+}
+
+.ktsys-details__title{
+    font-family: 'Klavika Regular', sans-serif;
+    text-transform: uppercase;
+}

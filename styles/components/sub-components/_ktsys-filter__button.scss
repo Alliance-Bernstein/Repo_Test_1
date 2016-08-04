@@ -1,0 +1,97 @@
+.ktsys-filter__button--capitalize{
+		text-transform: capitalize !important;
+}
+
+[class^='ktsys-filter__button']{
+		width: 100%;
+		background: $ab-turquoise;
+		border: none;
+        box-sizing: border-box;
+		cursor: pointer;
+		color: white;
+		margin-bottom: 5px;
+        padding: 12px 0;
+		font-size: responsive 11px 14px;
+		text-transform: uppercase;
+		text-align: center;
+        transition: 0.3s;
+		font-family: 'Klavika Light', sans-serif;
+        
+        @include breakpoint(medium){
+            margin-bottom: 1px;
+		    padding: 10px 0;
+        }
+
+		&:hover{
+			background: darken($ab-turquoise, 10%);
+		}
+
+		&.active{
+			background: $main-text;
+			color: white;
+
+			&:hover{
+				background: darken($main-text, 15%);
+			}
+		}
+}
+
+.ktsys-filter__button.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+li.ktsys-filter__button--share-class,
+.ktsys-share-class-container .ktsys-filter__button--share-class{
+        background: transparent;
+        list-style: none;
+        display: inline-block;
+        width: calc(50% - 1px);
+        padding: 0;
+        margin-bottom: 5px;
+        
+        @include breakpoint(medium){
+            margin-bottom: -6px;
+        }
+        
+        @include breakpoint(large){
+            margin-bottom: -7px;
+        }
+        
+        &.active .ktsys-filter__ul__info{
+            background: $main-text;
+            
+            &:hover{
+                background: darken($main-text, 15%);
+            }
+        }
+        
+         
+        &.active .ktsys-filter__ul__help{
+            background: darken($ab-turquoise, 20%);    
+        }
+}
+
+.ktsys-filter__button--share-class:not(:nth-child(2n + 1)){
+       margin-left: 1px;
+}
+
+.ktsys-filter__button--currency{
+		width: calc(40.1% - 11px);
+		float: left;
+        padding: 7px 0;
+		list-style: none;
+
+		&:not(:nth-child(3n + 1)){
+			margin-left: 1px;
+		}
+        
+        &.ktsys-filter__button--thirds{
+            width: 33%;
+            padding: 8px 0;
+        }
+}
+
+.ktsys-filter__button--margin-top{
+    margin-top: 18px;
+}

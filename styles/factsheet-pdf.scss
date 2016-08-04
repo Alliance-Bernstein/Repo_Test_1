@@ -1,0 +1,102 @@
+/*------- IMPORTS --------*/
+
+@import "/imports/variables";
+@import "/imports/mixins";
+@import "/imports/fonts";
+
+/*------- COMPONENTS --------*/
+
+@import "/components/ktsys-pdf";
+@import "/components/ktsys-disclaimer";
+@import "/components/ktsys-change";
+
+/*------------------------*/
+
+
+/*
+
+This core file contains rules for generic 
+elements below, those that are either throwaway
+or don't fit in to any other component
+
+*/
+
+.ktsys-separator{
+    clear: both;
+    height: 1px;
+    opacity: 0.3;
+    background: $main-text;
+    width: 100%;
+    display: block;
+}
+
+.ktsys-page-break{
+    @media print{
+        display: none;
+        page-break-after: always;
+    }
+}
+
+h1, h2, h3, h4, h5{
+    page-break-after: avoid;
+}
+
+table{
+    page-break-inside: avoid;    
+}
+
+.ktsys-wrapper{
+	font-size: 16px;
+	line-height: 1.6;
+	width: 70%;
+	margin: 0 auto;
+    
+    a{
+        color: $ab-turquoise;
+        font-family: 'Klavika Bold', sans-serif;
+        text-decoration: none;
+    }
+
+	button:focus{
+		outline: 0;
+	}
+    
+    .ktsys-details__container--backing:last-of-type{
+        margin-bottom: 0;
+    }
+    
+    .ktsys-details__table thead th,
+    .ktsys-details__table tbody td,{
+        padding: 5px 0;
+    }
+}
+
+.ktsys-p{
+    font-family: 'Klavika Regular', sans-serif;
+    color: black;
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.ktsys-as-of{
+    font-family: 'Klavika Regular', sans-serif;
+    text-transform: none;
+    font-size: 10px;
+}
+
+.ktsys-table-list{
+    padding: 0;
+    clear: both;
+    
+    li{
+        list-style: none;
+        float: left;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .ktsys-details__title{
+        text-transform: capitalize;
+    }
+}

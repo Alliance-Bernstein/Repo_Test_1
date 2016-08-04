@@ -1,0 +1,56 @@
+.ktsys-morningstar{
+    transform: scale(0.8);
+    display: inline-block;
+    background-image: url(../images/morningstar.svg);
+    @include size(50px, 18px);
+    
+    &.ktsys-morningstar--0{
+        background-image: none;
+    }
+    
+    &.ktsys-morningstar--1{
+        width: 20px;
+    }
+    
+    &.ktsys-morningstar--2{
+        width: 37px;
+        margin-left: -10px;
+    }
+    
+    &.ktsys-morningstar--3{
+        width: 56px;
+        margin-left: -10px;
+    }
+    
+    &.ktsys-morningstar--4{
+        width: 75px;
+        margin-left: -10px;
+    }
+    
+    &.ktsys-morningstar--5{
+        width: 95px;
+        margin-left: -10px;
+    }
+}
+
+.ktsys-morningstar-table-container{
+    position: relative;
+
+    .ktsys-table-shadow{
+        display: block;
+        position: absolute;
+        z-index: 2;
+        pointer-events: none;
+        box-shadow: inset -15px -1px 15px 0 $filter-button;
+        @include size(100%);
+
+        @include breakpoint(small) {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+
+#morningstar {
+    overflow: hidden;
+}

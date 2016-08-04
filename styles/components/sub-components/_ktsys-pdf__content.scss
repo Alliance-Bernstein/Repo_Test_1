@@ -1,0 +1,97 @@
+.ktsys-pdf__content{
+    clear: fix-legacy;
+}
+
+.ktsys-pdf__content--backing{
+    margin-top: 30px;
+    background: $filter-button;
+    box-sizing: border-box;
+    padding: 0.5px 20px 20px 20px;
+}
+
+.ktsys-pdf__content__title{
+    font-family: 'Klavika Bold', sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    
+    &.ktsys-pdf__content__title--pushed{
+        clear: both;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    &.ktsys-pdf__content__title--top-pushed{
+        margin-bottom: -10px;
+        margin-top: 40px;
+    }
+}
+
+.ktsys-pdf__content--left{
+    margin: 0 10px 30px 0;
+    float: left;
+    width: 25%;
+    
+    &.ktsys-pdf__content--minor{
+        width: 30%;
+    }
+}
+
+.ktsys-pdf__content--right{
+    float: right;
+    width: 65%;
+   
+    &.ktsys-pdf__content--pushed{
+        margin-top: 20px;
+    }
+    
+    .ktsys-pdf__content__title.ktsys-pdf__content__title--pushed{
+        margin-bottom: 15px;
+    }
+      
+    .ktsys-details__table{
+        th{
+            font-size: 10px;    
+        } 
+        
+        td{
+            font-size: 12px;
+        }
+    }
+}
+
+
+.ktsys-details__table{
+     th{
+        font-size: 10px; 
+        font-family: 'Klavika Regular', sans-serif;   
+     } 
+        
+     td{
+        font-size: 12px;
+     }
+}
+
+.ktsys-details__title{
+    font-family: 'Klavika Regular', sans-serif;
+}
+
+.ktsys-pdf__content__ul{
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Klavika Regular', sans-serif;
+    
+    li{
+        list-style: none;
+        margin-bottom: 5px;
+        
+        &:before{
+            content: '';
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url('../images/plus_purple.png');
+            background-size: contain;
+            @include size(10px);
+        }
+    }
+}

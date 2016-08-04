@@ -1,0 +1,19 @@
+.ktsys-disclaimer{
+    clear: both;
+    font-size: responsive 9px 11px;
+    font-family: 'Klavika Regular', sans-serif;
+    color: $main-text;
+}
+
+.ktsys-holdings-disclaimers{
+    margin-bottom: 20px;
+
+    @include breakpoint(medium){
+        max-width: 430px;
+        float: left;
+    }
+
+    .ktsys-disclaimer{
+        margin: 0;
+    }
+}

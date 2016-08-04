@@ -1,0 +1,18 @@
+.ktsys-loader{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    transition: 0.3s;
+    background: $bg-colour;
+    @include size(100%);
+    
+    .ktsys-loader__loader-icon{
+        background: url('../images/loading.gif') no-repeat;
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 200px auto;
+        @include size(35px);
+    }
+}

@@ -1,0 +1,223 @@
+/*-------- COMPONENTS -------*/
+
+@import "sub-components/ktsys-details__button";
+@import "sub-components/ktsys-details__table";
+@import "sub-components/ktsys-details__select";
+
+/*--------------------------*/
+
+.pricing{
+    position: relative;
+}
+
+.ktsys-details__body{
+    margin-top: 30px;
+}
+
+.ktsys-details__wrapper{
+    clear: both;
+    background: $bg-colour;
+    box-sizing: border-box;
+    border: 5px solid $filter-button;
+    
+    @include breakpoint(medium){
+        border: 15px solid $filter-button;
+    }
+}
+
+.ktsys-details__container{
+    width: 95%;
+    clear: fix-legacy;
+    margin: 0 auto 10px auto;
+    
+    &:last-of-type{
+        margin: 0 auto;
+    }
+    
+    @include breakpoint(medium){
+        margin: 0 auto 36px auto;
+    }
+}
+
+.ktsys-details__container--chart{
+    position: absolute;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+    margin-right: -9999px;
+    
+    &.active{
+        margin: 0 auto;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.ktsys-details__container.ktsys-details__container--left{
+    margin-top: 30px;
+    
+    @include breakpoint(medium){
+        float: left;
+        width: 30%;
+        margin-left: 2.5%;
+        margin-top: 0;
+    }
+    
+    &.ktsys-details__container--long{
+        @include breakpoint(medium){
+            margin-top: 30px;
+            width: 50%;
+        }
+        
+        .ktsys-p{
+            margin-bottom: 0;
+        }
+    }
+    
+    &.ktsys-details__container--half{
+        margin-left: 0;
+        
+        @include breakpoint(medium){
+            width: 48%;   
+            padding-top: 0; 
+        }
+    }
+}
+
+.ktsys-details__container--right{
+    @include breakpoint(medium){
+        clear: none;
+        float: right;
+        width: 60%;
+        margin-right: 2.5%;
+    }
+    
+    &.ktsys-details__container--short{
+        margin-top: 26px;
+         
+        @include breakpoint(medium){
+            margin-top: 36px;
+            width: 40%;
+        }
+    }
+    
+    &.ktsys-details__container--half{
+        margin-left: 0;
+        
+        @include breakpoint(medium){
+            width: 48%;
+            padding-top: 0;
+        }
+    }
+}
+
+.ktsys-details__container--backing{
+    background: $filter-button;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    clear: fix-legacy;
+    clear: both;
+    
+    .ktsys-details__container{
+        width: 95%;
+        padding: 20px 0;
+    }
+    
+    h3.ktsys-details__title{
+        margin: 15px 0;
+    }
+    
+    h3.ktsys-details__title--float-left{
+        float: left;
+    }
+    
+    .ktsys-details__title--clear{
+        clear: both;
+    }
+    
+    .ktsys-share-class{
+        margin-top: 25px;
+    }
+}
+
+.ktsys-details__container--pricing{
+    margin-bottom: 0;
+    
+    .ktsys-disclaimer{
+        margin-bottom: 18px;
+    }
+}
+
+.ktsys-details__title{
+    font-family: 'Klavika Bold', sans-serif;
+    color: black;
+    text-transform: capitalize;
+}
+
+h3.ktsys-details__title{
+    font-size: responsive 25px 30px;
+    margin-bottom: 0;
+    clear: both;  
+    margin-top: 0;
+}
+
+h4.ktsys-details__title{
+    font-size: responsive 20px 24px;
+    margin-top: 0;
+    margin-bottom: 6px;
+    
+    &.ktsys-details__title--inline{
+        display: inline-block;
+    }
+}
+
+.ktsys-details__list{
+    padding: 0;
+    font-size: responsive 12px 14px;
+    font-family: 'Klavika Regular', sans-serif;
+    margin-bottom: 26px;
+    
+    @include breakpoint(medium){
+        margin-bottom: auto;
+    }
+    
+    li{
+        list-style: none;
+        margin-bottom: 10px;
+        
+        &:before{
+            content: '';
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url('../images/plus_purple.png');
+            background-size: contain;
+            @include size(10px);
+        }
+    }
+}
+
+.ktsys-objective-list{
+        padding: 0;
+        
+        li{
+            list-style: none;
+            font-size: responsive 12px 14px;
+            font-family: 'Klavika Regular', sans-serif;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            position: relative;
+            
+            
+            &:before{
+                content: '';
+                display: inline-block;
+                margin-right: 10px;
+                margin-left: -20px;
+                background-image: url('../images/plus_purple.png');
+                background-size: contain;
+                @include size(10px);
+            }
+        }
+    }

@@ -1,0 +1,99 @@
+/*---- Throw away CSS for header ----*/
+
+header{
+    background: white;
+    clear: fix-legacy;
+    padding: 30px 0 10px 0;
+    margin: 0 0 30px 0;
+    width: 100%;
+    font-family: 'Klavika Bold', sans-serif;
+    text-transform: uppercase;
+    
+    .logo{
+        margin-left: 5%;
+        background-image: url('../images/ab-logo.png');
+        background-size: contain;
+        float: left;
+        @include size(62px);
+        
+        @include breakpoint(large){
+            margin-left: 0;
+        }
+    }
+    
+    ul{
+        float: right;
+        margin-top: 48px;
+        margin-right: 2%;
+        
+        @include breakpoint(large){
+            margin-right: 0;
+        }
+        
+        li {
+            float: left;
+            font-size: 14px;
+            list-style: none;
+        }
+        
+        li:not(:first-child){
+            margin-left: 15px;
+        }
+    }
+}
+
+nav{
+    clear: fix-legacy;
+    background: $bg-colour;
+    border-bottom: 1px solid darken($bg-colour, 5%);
+    
+    .menu-image{
+        margin-left: 5%;
+        float: left;
+        background-image: url('../images/nav-image.png');
+        background-size: contain;
+        background-position: 0 -1px;
+        background-repeat: no-repeat;
+        @include size(180px, 34px);
+        
+        @include breakpoint(medium){
+            margin-left: 10%;
+        }
+    }
+    
+    .float-right{
+        display: none;
+        clear: fix-legacy;
+        float: right;
+        margin-right: 10%;
+        
+        @include breakpoint(small){
+            display: block;
+        }
+    }
+    
+    .info-image{
+        background-image: url('../images/info-image.png');
+        background-size: contain;
+        float: left;
+        display: none;
+        margin-top: 7px;
+        background-repeat: no-repeat;
+        @include size(20px);
+        
+        @include breakpoint(medium){
+            display: block;
+        }
+    }
+    
+    .profile-image{
+        background-image: url('../images/english.png');
+        background-size: contain;
+        float: right;
+        margin-left: 20px;
+        background-repeat: no-repeat;
+        @include size(80px, 34px);
+    }
+}
+        
+     

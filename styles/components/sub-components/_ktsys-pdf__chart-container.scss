@@ -1,0 +1,71 @@
+.ktsys-pdf__chart-container{
+    
+    &.ktsys-pdf__chart-container--margin-bottom{
+        margin-bottom: 50px;
+    }
+    
+    .ktsys-details__table{
+        th, td{
+            font-size: 10px;
+            width: 11%;
+            font-family: 'Klavika Regular', sans-serif !important;
+        }
+        
+        th:first-child, td:first-child{
+            width: 34%;
+        }
+    }
+    
+    .ktsys-details__table.ktsys-details__table--large-headings thead th{
+        padding: 13px 0;
+    }
+    
+    .ktsys-details__table--float-right{
+        float: right;
+        width: 52%;
+    }
+    
+    .ktsys-details__table.ktsys-details__table--distributions{
+        th, td{
+            width: 20%;
+        }
+        
+        th:first-child, td:first-child{
+            width: 40%;
+        }
+    }
+    
+    .ktsys-disclaimer{
+        font-size: 7px;
+    }
+    
+    .ktsys-chart{
+        height: 270px;
+        float: left;
+    }
+}
+
+.ktsys-pdf__chart-container--float-left{
+    float: left;
+    width: 49%;
+    
+    &.ktsys-pdf__chart-container--margin-right{
+        margin-right: 10px;
+    }
+}
+
+.ktsys-pdf__chart-super-container{
+    
+    .ktsys-table-list li{
+        float: left;
+        width: 49%;
+        
+        &.ktsys-table-list--margin-right{
+            margin-right: 10px;
+        }
+    
+        td{
+            font-size: 9px !important;
+        }
+    }
+} 

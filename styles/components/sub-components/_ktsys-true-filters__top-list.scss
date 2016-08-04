@@ -1,0 +1,16 @@
+.ktsys-true-filters__top-list{
+    float: left;
+    width: 360px;
+    
+    li{
+        list-style: none;
+        width: calc(25% - 1px);
+        float: left;
+        margin-right: 1px; 
+        padding: 14px 0;   
+    }
+    
+    li:last-child{
+        margin-right: 0;
+    }
+}

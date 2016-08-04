@@ -1,0 +1,45 @@
+.ktsys-filter__hide{
+    width: 100%;
+    clear: both;
+    margin-top: 20px;
+    display: none;
+    transition: 0.3s;
+    font-family: 'Klavika Light', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: $filter-heading-colour;
+    
+    @include breakpoint(medium){
+        display: block;
+    }
+    
+    &:hover{
+        background: darken($filter-heading-colour, 5%);
+    }
+    
+    .ktsys-filter__hide__toggle{
+        display: block;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        padding: 5px 0;
+        width: 20%;
+        
+        &:before{
+            content: '';
+            position: absolute;
+            top: 35%;
+            transition: 0.3s;
+            transform: rotate(180deg);
+            left: 20px;
+            display: block;
+            background: url('../images/chevron_black_down.png');
+            background-size: contain;
+            @include size(11.7px, 7px);
+        }
+        
+        &.active:before{
+            transform: rotate(0);
+        }
+    }
+}

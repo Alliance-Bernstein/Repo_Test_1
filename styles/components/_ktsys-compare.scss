@@ -1,0 +1,49 @@
+.ktsys-compare{
+    padding: 10px 0 0 0;
+    clear: fix-legacy;
+    
+    .ktsys-compare__icon{
+        background-image: url('../images/plus_purple.png');
+        float: left;
+        transition: 0.3s;
+        cursor: pointer;
+        @include size(14px);
+        
+        &.active{
+            transform: rotate(45deg);
+        }
+    }
+    
+    .ktsys-compare__title{
+        font-size: 11px;
+        float: left;
+        cursor: pointer;
+        margin-left: 8px;
+        font-family: 'Klavika Regular', sans-serif;
+        
+        &.active{
+            color: $call-to-action;
+            font-size: 12px;
+            font-family: 'Klavika Bold', sans-serif;
+        }
+    }
+}
+
+.ktsys-compare-title {
+    position: absolute;
+    font-family: 'Klavika Regular', sans-serif;
+    font-size: 12px;
+    width: 200px;
+    background: $filter-button;
+    box-sizing: border-box;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 99;
+
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+}

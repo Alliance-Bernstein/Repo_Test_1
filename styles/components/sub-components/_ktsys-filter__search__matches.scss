@@ -1,0 +1,40 @@
+.ktsys-filter__search__matches{
+    position: absolute;
+    display: none;
+    width: 100%;
+    background: white;
+    box-sizing: border-box; 
+    max-width: 300px;
+    padding: 5px;
+    z-index: 99;
+
+    &.active{
+        display: block;
+    }
+
+    li{
+        list-style: none;
+        cursor: pointer;
+        transition: 0.3s;
+        padding: 10px;
+        font-size: responsive 12px 14px;
+        text-transform: uppercase;
+        background: $bg-colour;
+        font-family: 'Klavika Regular', sans-serif;
+        margin-bottom: 1px;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        b{
+            font-family: 'Klavika Bold', sans-serif;
+        }
+
+        &:hover,
+        &.highlight{
+            background: darken($bg-colour, 10%);
+        }
+    }
+}

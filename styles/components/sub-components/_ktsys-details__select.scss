@@ -1,0 +1,92 @@
+.ktsys-details__select{
+    font-size: responsive 12px 14px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 1px;    
+    width: 150px;
+    cursor: pointer;
+    
+    @include breakpoint(medium) {
+        float: right;
+    }
+    
+    .ktsys-details__select__label{
+        float: left;
+        margin-top: 5px;
+        margin-right: 20px;
+        width: 20%;
+        font-family: 'Klavika Regular', sans-serif;
+
+        @include breakpoint(medium) {
+            text-align: right;
+            width: 33%;
+            margin-right: 10px;
+        }
+    }
+
+    select{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        margin-top: 5px;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:focus,
+        &::selection,
+        &::-moz-selection{
+            border: none;
+        }
+    }
+    
+    .ktsys-details__select__selector{
+        background: $filter-button;
+        padding: 5px 15px;
+        z-index: 3;
+        right: 0;
+        transition: 0.3s;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 10px;
+        font-family: 'Klavika Bold', sans-serif;
+        cursor: pointer;
+        pointer-events: none;
+        position: absolute;
+        
+        @include breakpoint(medium){
+            margin-bottom: 0;
+        }
+        
+        &:after{
+            content: "";
+            display: inline-block;
+            right: 8px;
+            top: 12px;
+            position: absolute;
+            margin-bottom: 2px;
+            background-image: url("../images/chevron_teal_down.png");
+            background-size: contain;
+            @include size(12px, 7px);
+        }
+    }
+}
+
+.ktsys-details__month-container{
+    position: relative;
+    display: block;
+    clear: fix-legacy;
+    width: 60%;
+    height: 32px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 20px;
+
+    @include breakpoint(medium){
+        float: right;
+        margin-bottom: 0;
+    }
+
+    &:hover .ktsys-details__select__selector{
+        background: darken($filter-button, 10%);
+    }
+}

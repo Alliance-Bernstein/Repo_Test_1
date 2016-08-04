@@ -1,0 +1,40 @@
+.ktsys-print{
+     font-family: 'Klavika Regular', sans-serif;
+     color: $ab-turquoise;
+     text-transform: uppercase;
+     float: right;
+     margin-right: 12px;
+     margin-bottom: -56px;
+     
+     @include breakpoint(small){
+        margin-bottom: 0;
+        margin-top: 0;
+        //margin-top: 25px;
+     }
+         
+     @include breakpoint(medium){
+        margin-right: 0;
+     }
+
+        
+     .ktsys-print__label{
+         margin-top: 5px;
+         
+         @include breakpoint(small){
+            float: left;
+            margin-right: 10px;
+         }
+     }
+        
+     .ktsys-print__icon{
+         cursor: pointer;
+         float: right;
+         background: url(../images/print_button.png) 0 0;
+         @include size(33px);
+            
+         &:hover{
+            background-position: 0 -34px;
+         }
+     }
+        
+}

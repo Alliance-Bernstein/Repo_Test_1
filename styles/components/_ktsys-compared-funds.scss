@@ -1,0 +1,17 @@
+.ktsys-compared-funds{
+	float: right;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	margin-top: 16px;
+    transition: 0.3s;
+	cursor: pointer;
+	font-size: responsive 15px 18px;
+	font-family: 'Klavika Light', sans-serif;
+	background: $call-to-action;
+
+	&:hover{
+		background: darken($call-to-action, 15%);
+	}
+}

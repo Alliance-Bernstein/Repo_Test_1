@@ -1,0 +1,64 @@
+	.ktsys-radio{
+		float: right;
+		color: black;
+		font-size: responsive 9px 11px;
+		font-family: 'Klavika Regular', sans-serif;
+        
+        input[type="radio"]{
+            display: none;
+        }
+        
+        input[type="radio"]:checked + label{
+            color: darken($ab-turquoise, 10%);
+                
+            span{
+                position: relative;
+                transition: 0.3s;
+                border: 1px solid darken($ab-turquoise, 10%);
+                
+                &:before{
+                    content: '';
+                    display: block;
+                    background: $ab-turquoise;
+                    margin-top: 2px;
+                    margin-left: 2px;
+                    border-radius: 50%;
+                    @include size(11px);
+                }
+            }
+        }
+        
+        label{
+            text-transform: capitalize;
+            cursor: pointer;
+            
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                cursor: pointer;
+                border: 1px solid $main-text;
+                margin-top: -3px;
+                border-radius: 50%;
+                margin-right: 5px;
+                background: white;
+                @include size(15px);
+            }
+        }
+        
+        label:not(:last-child){
+            margin-right: 15px;
+        }
+	}
+    
+.ktsys-radio--filter{
+    float: left;
+    margin-top: 5px;
+    
+    label {
+        display: block;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        text-indent: -25px;
+        padding-left: 25px;
+    }
+}

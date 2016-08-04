@@ -1,0 +1,46 @@
+.ktsys-filter__help-modal{
+    width: 200px;
+    box-sizing: border-box;
+    padding: 15px;
+    background: $bg-colour;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.3s;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    .ktsys-filter__help-title{
+        font-family: 'Klavika Bold', sans-serif;
+        margin-bottom: 10px;
+        margin-top: 0;
+        float: left;
+        font-size: responsive 14px 18px;
+    }
+    
+    .ktsys-filter__help-info{
+        margin: 0;
+        clear: both;
+        font-family: 'Klavika Regular', sans-serif;
+        font-size: responsive 12px 14px;
+    }
+    
+    .ktsys-filter__help-close{
+        cursor: pointer;
+        float: right;
+        background: url('../images/close_x_button.png') 0 0;
+        @include size(22px);
+        
+        &:hover{
+            background-position: 0 -23px;
+        }
+    }
+}

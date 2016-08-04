@@ -1,0 +1,55 @@
+.ktsys-downloads-list{
+    padding: 0;
+    float: left;
+    margin-top: 16px;
+    
+    .ktsys-downloads--pdf{
+        margin-top: 0;
+    }
+    
+    &.ktsys-downloads-list--vertical{
+        margin-left: 0;
+        margin-bottom: 0;
+        
+        li{
+            float: none;
+            margin-right: 0;
+            clear: fix-legacy;
+            margin-bottom: 10px;
+            
+            .ktsys-downloads--pdf{
+                float: left;
+            }
+            
+            span{
+                float: left;
+                font-family: 'Klavika Regular', sans-serif;
+                max-width: 300px;
+            }
+        }
+    
+        &.ktsys-downloads-list--margin-top{
+            margin-bottom: 35px;
+        }
+    }
+    
+    li{
+        list-style: none;
+        float: left;
+        cursor: pointer;
+        margin-right: 25px;
+        text-transform: capitalize;
+        color: $ab-turquoise;
+        font-family: 'Klavika Regular', sans-serif;
+        
+        span{
+            display: block;
+            float: right;
+            margin-top: 6px;
+        }
+       
+        &:hover .ktsys-downloads--pdf{
+            background-position: 0 -34px;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.ktsys-true-filters__column{
+		width: 100%;
+        clear: both;
+        
+        @include breakpoint(medium){
+            flex-grow: 1;
+            order: 1;
+            width: 0;
+            clear: none;
+        }
+                
+        &.ktsys-true-filters__column--larger{
+            position: relative; 
+            
+            @include breakpoint(medium){
+                flex-grow: 3;
+                order: 2;
+            }
+            
+            .ktsys-filter__text{
+                margin-bottom: 15px;
+            }
+        }
+        
+        .ktsys-mobile__filter-direction{
+            display: inline-block;
+            margin-left: 10px;
+            @include size(0);
+            @include triangle('up', 8px, $main-text);
+                
+            @include breakpoint(medium){
+               display: none;
+            }
+                
+            &.active{
+                transform: rotate(180deg);
+            }
+        }
+        
+        ul{
+            clear: fix-legacy;
+            padding: 0;
+            margin: 0;
+        }
+}
+
+.ktsys-true-filters__column:not(:first-child){
+    @include breakpoint(medium){
+        margin-left: 4%;
+    }	
+}
+    
+.ktsys-true-filters__column__inner{
+    width: 100%;
+    clear: fix-legacy;
+    
+    @include breakpoint(medium){
+        float: left;
+        width: calc(31.825% - 15px);
+    }
+        
+    &:not(:first-of-type){
+        margin-top: 20px;
+            
+        @include breakpoint(medium){
+            margin-left: 6.3%;
+            margin-top: 0;
+        }
+    }
+}
+
+.ktsys-true-filters__column__inner.disabled{
+    & > .ktsys-filter__button,
+    .ktsys-filter__button--share-class,
+    .ktsys-checkbox, 
+    .ktsys-filter__button--currency {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+}
+    
+.ktsys-true-filters__column.ktsys-true-filters__column--hk{
+    @include breakpoint(medium){
+        width: calc(24.5% - 30px);
+    }
+}
+
+.ktsys-share-class-help{
+    position: absolute;
+    display: block;
+    width: 40%;
+    right: 9%;
+    transition: 0.3s;
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+    top: 100px;
+    font-family: 'Klavika Regular', sans-serif;
+    padding: 20px;
+    font-size: 14px;
+    background: $bg-colour;
+    
+    &.active{
+        transform: scale(1);
+        visibility: visible;
+        opacity: 1;
+    }
+}

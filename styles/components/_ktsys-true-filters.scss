@@ -1,0 +1,39 @@
+/*-------- COMPONENTS -------*/
+
+@import "sub-components/ktsys-true-filters__column";
+
+/*--------------------------*/
+
+.ktsys-true-filters{
+	clear: fix-legacy;
+	clear: both;
+    width: 90%;
+    margin: 40px auto 0 auto;
+    
+    @include breakpoint(medium) { 
+	   width: 93%;
+	   margin: 40px auto;
+       display: flex;
+       flex-direction: row;
+    }
+    
+    &.hidden{
+        @media all and (max-width: 492px){
+            position: absolute;
+            transform: scale(0);
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    
+    &.minimised{
+        margin: 20px auto;
+    }
+}
+
+
+.ktsys-true-filters__heading{
+    font-family: 'Klavika Bold', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+}

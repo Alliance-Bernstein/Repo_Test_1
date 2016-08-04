@@ -1,0 +1,42 @@
+.ktsys-holdings{
+    clear: fix-legacy;
+}
+
+.ktsys-holdings__title{
+    font-weight: 400;
+    font-size: responsive 16px 18px;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: $ab-turquoise;
+    font-family: 'Klavika Bold', sans-serif;
+    
+    span{
+        font-size: responsive 20px 24px;
+        margin-right: 5px;
+    }
+}
+
+.ktsys-choldings-table-container {
+    position: relative;
+    width: 100%;
+
+    .ktsys-table-shadow{
+        display: block;
+        position: absolute;
+        z-index: 2;
+        pointer-events: none;
+        box-shadow: inset -15px -1px 15px 0 $bg-colour;
+        @include size(100%);
+
+        @include breakpoint(small) {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+
+#holdings {
+    overflow: hidden;
+}

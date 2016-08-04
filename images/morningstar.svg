@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="95px" height="18px" viewBox="0 0 95 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16618) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="rating-star" sketch:type="MSLayerGroup">
+                <g id="star-rate" sketch:type="MSShapeGroup">
+                    <path d="M9.5,13.7617347 L15.3583333,17.9770408 L13.1416667,11.1076531 L19,7.04846939 L11.875,7.04846939 L9.5,0.0229591837 L7.125,7.04846939 L0,7.04846939 L5.85833333,11.1076531 L3.64166667,17.9770408 L9.5,13.7617347 Z" id="Shape"></path>
+                </g>
+            </g>
+            <g id="rating-star" sketch:type="MSLayerGroup" transform="translate(19.000000, 0.000000)">
+                <g id="star-rate" sketch:type="MSShapeGroup">
+                    <path d="M9.5,13.7617347 L15.3583333,17.9770408 L13.1416667,11.1076531 L19,7.04846939 L11.875,7.04846939 L9.5,0.0229591837 L7.125,7.04846939 L0,7.04846939 L5.85833333,11.1076531 L3.64166667,17.9770408 L9.5,13.7617347 Z" id="Shape"></path>
+                </g>
+            </g>
+            <g id="rating-star" sketch:type="MSLayerGroup" transform="translate(38.000000, 0.000000)">
+                <g id="star-rate" sketch:type="MSShapeGroup">
+                    <path d="M9.5,13.7617347 L15.3583333,17.9770408 L13.1416667,11.1076531 L19,7.04846939 L11.875,7.04846939 L9.5,0.0229591837 L7.125,7.04846939 L0,7.04846939 L5.85833333,11.1076531 L3.64166667,17.9770408 L9.5,13.7617347 Z" id="Shape"></path>
+                </g>
+            </g>
+            <g id="rating-star" sketch:type="MSLayerGroup" transform="translate(57.000000, 0.000000)">
+                <g id="star-rate" sketch:type="MSShapeGroup">
+                    <path d="M9.5,13.7617347 L15.3583333,17.9770408 L13.1416667,11.1076531 L19,7.04846939 L11.875,7.04846939 L9.5,0.0229591837 L7.125,7.04846939 L0,7.04846939 L5.85833333,11.1076531 L3.64166667,17.9770408 L9.5,13.7617347 Z" id="Shape"></path>
+                </g>
+            </g>
+            <g id="rating-star" sketch:type="MSLayerGroup" transform="translate(76.000000, 0.000000)">
+                <g id="star-rate" sketch:type="MSShapeGroup">
+                    <path d="M9.5,13.7617347 L15.3583333,17.9770408 L13.1416667,11.1076531 L19,7.04846939 L11.875,7.04846939 L9.5,0.0229591837 L7.125,7.04846939 L0,7.04846939 L5.85833333,11.1076531 L3.64166667,17.9770408 L9.5,13.7617347 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

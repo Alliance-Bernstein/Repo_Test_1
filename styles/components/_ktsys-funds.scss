@@ -1,0 +1,38 @@
+/*-------- COMPONENTS -------*/
+
+@import "sub-components/ktsys-funds__table";
+
+/*--------------------------*/
+
+.ktsys-funds{
+	clear: fix-legacy;
+	margin: 20px 0;
+    display: none;
+    
+    @include breakpoint(large){
+        display: block;
+    }
+}
+
+.ktsys-funds__options{
+	padding-top: 20px;
+	clear: both;
+	display: none;
+    border-top: 1px solid $main-text;
+    border-bottom: 1px solid $main-text;
+
+	.ktsys-funds__options__returns{
+		display: inline-block;
+		margin-left: 11%;
+		text-transform: uppercase;
+		text-align: center;
+		width: 56.6%;
+		padding: 5px 0;
+		font-size: responsive 10px 12px;
+		font-family: 'Klavika Light', sans-serif;
+	}
+    
+	&.active{
+		display: block;
+	}
+}

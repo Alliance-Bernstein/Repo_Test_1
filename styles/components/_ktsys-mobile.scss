@@ -1,0 +1,188 @@
+.ktsys-mobile__filter-toggle{
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 6px;
+    margin: 0 auto -25px;
+    color: $main-text;
+    cursor: pointer;
+    border: 1px solid $main-text;
+    font-size: 18px;
+    font-family: 'Klavika Regular', sans-serif;
+    text-transform: capitalize;
+    
+    .ktsys-mobile__filter-direction{
+        display: inline-block;
+        margin-left: 10px;
+        @include size(0);
+        @include triangle('up', 8px, $main-text);
+        
+        &.active{
+            transform: rotate(180deg);
+        }
+    }
+    
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+.ktsys-mobile__funds{
+   @include breakpoint(large) {
+       display: none;
+   } 
+   
+   .ktsys-mobile__card{
+       box-sizing: border-box;
+       padding: 20px;
+       margin: 10px auto;
+       width: 90%;
+       clear: fix-legacy;
+       background: white;
+       border-bottom: 3px solid $ab-turquoise;
+       
+       @include breakpoint(medium) {
+           width: calc(50% - 5px);
+           float: left;
+       }
+       
+       &:nth-child(2n + 1){
+           @include breakpoint(medium) {
+               margin-right: 10px;
+           }
+       }
+       
+       .ktsys-mobile__card__title{
+           font-family: 'Klavika Bold', sans-serif;
+           font-size: 26px;
+           line-height: 1;
+           color: black;
+           text-transform: uppercase;
+           margin-top: 10px;
+           
+           &:after{
+               content: '';
+               display: inline-block;
+               margin-left: 10px;
+               background: url('../images/chevron-right.png');
+               @include size(11px);
+           }
+       }
+       
+       .ktsys-mobile__card__items{
+           padding: 0;
+           clear: both;
+       }
+       
+       .ktsys-mobile__card__items li{
+           list-style: none;
+           float: left;
+           font-family: 'Klavika Light', sans-serif;
+           width: 31%;
+           height: 50px;
+           margin-bottom: 20px;
+       }
+       
+       .ktsys-mobile__card__items li:not(:nth-child(3n)){
+           margin-right: 2px;
+       }
+       
+       .ktsys-mobile__card__item__heading{
+           font-family: 'Klavika Bold', sans-serif;
+           color: black;
+           line-height: 1.2;
+           word-break: break-word;
+           font-size: responsive 14px 16px;
+       }
+       
+       .ktsys-mobile__card__download{
+           color: $ab-turquoise;
+           text-decoration: none;
+           font-family: 'Klavika Regular', sans-serif;
+           font-size: responsive 14px 16px;
+           float: left;
+           margin: 20px 25px 40px 0;
+       }
+       
+       .ktsys-mobile__card__pdf{
+           background-image: url(../images/download.png);
+           background-position: 0 0;
+           float: left;
+           margin-right: 5px;
+           margin-top: -7px;
+           @include size(33px);
+       }
+   }
+}
+
+.ktsys-mobile__container{
+    clear: fix-legacy;   
+    margin: 20px auto;
+    max-width: 90%;
+    
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+
+.ktsys-mobile__button{
+    width: calc(50% - 25px);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    float: left;
+    font-family: 'Klavika Light', sans-serif;
+    border: 1px solid $main-text;
+    background: white;
+    
+    &.active{
+        background: $main-text;
+        color: white;
+    }
+}
+
+.ktsys-mobile__button--float-right{
+    float: right;
+}
+
+.ktsys-mobile-tabs{
+    position: relative;
+    clear: fix-legacy;
+    height: 55px;
+    
+    @include breakpoint(medium) {
+        display: none;
+    }
+    
+    .ktsys-mobile-tab__button{
+        text-transform: uppercase;
+        font-family: 'Klavika Regular', sans-serif;
+        background: $ab-turquoise;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+        padding: 10px 0;
+        position: absolute;
+        width: 95%;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        margin: 0 auto;
+        pointer-events: none;
+    }
+    
+    select{
+        position: absolute;
+        z-index: 0;
+        width: 95%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        background: white;
+        height: 48px;
+    }
+}
+
+.ktsys-mobile-as-of{
+    font-size: 10px;
+}

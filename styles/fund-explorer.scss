@@ -1,0 +1,84 @@
+/*------- IMPORTS --------*/
+
+@import "/imports/variables";
+@import "/imports/mixins";
+@import "/imports/fonts";
+
+/*------- COMPONENTS --------*/
+
+@import "/components/ktsys-filters";
+@import "/components/ktsys-tabs";
+@import "/components/ktsys-loader";
+@import "/components/ktsys-change";
+@import "/components/ktsys-compare";
+@import "/components/ktsys-funds";
+@import "/components/ktsys-mobile";
+@import "/components/ktsys-radio";
+@import "/components/ktsys-pagination";
+@import "/components/ktsys-downloads";
+@import "/components/ktsys-downloads-container";
+@import "/components/ktsys-compared-funds";
+@import "/components/ktsys-checkbox";
+@import "/components/ktsys-true-filters";
+
+/*------------------------*/
+
+/*
+
+This core file contains rules for generic 
+elements below, those that are either throwaway
+or don't fit in to any other component
+
+*/
+
+@import "/components/header";
+
+body{
+    background: $bg-colour;
+    margin: 0;
+}
+
+.ktsys-wrapper{
+	font-size: responsive 13px 16px;
+	line-height: 1.6;
+	max-width: 1023px;
+	display: block;
+	margin: 0 auto;
+    position: relative;
+
+	button:focus{
+		outline: 0;
+	}
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+.hidden--space{
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.hidden--space.hidden--space{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.minor{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    height: 0;
+
+    .ktsys-filter__breadcrumbs{
+        margin-bottom: 20px;
+    }
+}
+
+.filter{
+    position: relative;
+}

@@ -1,0 +1,43 @@
+.ktsys-disclosure{
+    padding: 15px;
+    border: 1px solid $main-text;
+    box-sizing: border-box;
+    background: lighten($bg-colour, 4%);
+    max-height: 245px;
+    overflow: auto;
+    margin-bottom: 30px;
+    
+    @include breakpoint(medium){
+        padding: 26px;  
+    }
+    
+    h4{
+        margin-top: 0;
+        text-transform: uppercase;
+        font-family: 'Klavika Bold', sans-serif;
+    }
+    
+    ul{
+        padding: 0;
+        
+        li{
+            list-style: none;
+            font-size: responsive 12px 14px;
+            font-family: 'Klavika Regular', sans-serif;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            position: relative;
+            
+            
+            &:before{
+                content: '';
+                display: inline-block;
+                margin-right: 10px;
+                margin-left: -20px;
+                background-image: url('../images/plus_purple.png');
+                background-size: contain;
+                @include size(10px);
+            }
+        }
+    }
+}

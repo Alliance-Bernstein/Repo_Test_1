@@ -1,0 +1,44 @@
+.ktsys-filter__breadcrumbs{
+    clear: fix-legacy;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 33px;
+    display: none;
+    float: left;
+    max-width: 75%;
+    
+    @include breakpoint(large){
+        display: block;
+    }
+    
+    li{
+        list-style: none;
+        float: left;
+        color: white;
+        font-family: 'Klavika Light', sans-serif;
+        text-transform: uppercase;
+        font-size: responsive 9px 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background: $fund-button;
+        
+        &:hover{
+            background: $fund-button-hover;
+        }
+        
+        &:before{
+            content: '';
+            display: inline-block;
+            background-image: url(../images/cross-white.svg);
+            background-size: cover;
+            margin-right: 10px;
+            margin-top: 3px;
+            @include size(10px);
+        }
+    }
+    
+    li:not(:first-child){
+        margin-left: 10px;
+    }
+}

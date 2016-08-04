@@ -1,0 +1,15 @@
+.ktsys-downloads-container{
+    width: 100%;
+    display: block;
+    clear: both;
+    margin: 3px 0;
+    color: $ab-turquoise;
+    
+    .ktsys-downloads-container__label{
+        float: left;
+        margin-left: 5px;
+        margin-top: 2px;
+        text-align: left;
+        text-transform: capitalize;
+    }
+}

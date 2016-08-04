@@ -1,0 +1,44 @@
+/*======================MIXINS==========================*/
+
+@mixin absoluteCentre ($width: 100%, $position: absolute){
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: $width;
+    position: $position;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@mixin size ($width, $height: $width){
+    width: $width;
+    height: $height;
+}
+
+@mixin triangle ($direction, $size, $colour){ 
+    @if $direction == 'up'{
+       border-left: $size solid transparent;
+	   border-right: $size solid transparent;
+	   border-bottom: $size solid $colour;
+    }
+    @else if $direction == 'down'{
+       border-left: $size solid transparent;
+	   border-right: $size solid transparent;
+	   border-top: $size solid $colour;
+    }
+}
+
+@mixin breakpoint($breakpoint){
+   $map : (small: 480px, small-medium: 627px, medium: 768px, medium-large: 960px, large: 1024px, x-large: 1280px, xx-large: 1525px);
+  
+   @if map-has-key($map, $breakpoint){
+   	@media all and (min-width: #{map-get($map, $breakpoint)}){
+   		@content;
+   	}
+   }
+   
+   @else{
+   	@warn "There is no value #{$breakpoint} in the list of breakpoints";
+   }
+}

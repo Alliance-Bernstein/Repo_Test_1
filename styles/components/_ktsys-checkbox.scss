@@ -1,0 +1,44 @@
+.ktsys-checkbox{
+    margin-top: 15px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-family: 'Klavika Regular', sans-serif;
+    font-size: responsive 12px 14px;
+    
+    input[type="checkbox"]{
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked + label{
+        color: darken($ab-turquoise, 10%);
+        
+        span{
+            position: relative;
+            transition: 0.3s;
+            border: 1px solid darken($ab-turquoise, 10%);
+                
+            &:before{
+                 content: '';
+                 display: block;
+                 background: $ab-turquoise;
+                 margin-top: 2px;
+                 margin-left: 2px;
+                 @include size(11px);
+            }
+        }
+    }
+    
+    label{
+        cursor: pointer;
+    } 
+    
+    span{
+        cursor: pointer;
+        display: inline-block;
+        border: 1px solid $main-text;
+        vertical-align: middle;
+        margin-top: -3px;
+        margin-right: 5px;
+        @include size(15px);
+    }
+}
